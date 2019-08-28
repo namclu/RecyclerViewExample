@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView() {
         recycler_container.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
+            addItemDecoration(TopSpacingItemDecoration(30))
             blogAdapter = BlogRecyclerAdapter()
             adapter = blogAdapter
         }
