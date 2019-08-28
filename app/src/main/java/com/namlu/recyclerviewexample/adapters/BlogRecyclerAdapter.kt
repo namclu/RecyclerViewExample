@@ -52,9 +52,9 @@ class BlogRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 .error(R.drawable.ic_launcher_background)
 
             Glide.with(itemView.context)
+                .applyDefaultRequestOptions(requestOptions)
                 .load(blogPost.image)
                 .into(blogImage)
-
         }
     }
 }
